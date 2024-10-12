@@ -1,0 +1,12 @@
+<body>
+    <div id="container">
+        <pre id="source" disabled="locked">
+            {{displayCode}}
+            <span class="cursor" *ngIf="showCursor">|</span>
+        </pre>
+        
+    </div>
+    <div *ngIf="locked" id="access-msg" [ngClass]="{'denied': !success, 'success': success}">
+        {{accessMsg}}
+    </div>
+</body>
