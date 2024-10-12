@@ -45,8 +45,7 @@ export class HackingWindowComponent implements OnInit {
           this.accessMsg = 'ACCESS GANTED';
           this.success = true;
           this.locked = true;
-        }
-        window.scroll(scroll)
+        }        
       }
       if (event.key === "Escape" || event.key === "Enter") {
         this.locked = false;
